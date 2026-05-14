@@ -3,8 +3,8 @@
   <img class="projectLogo" src="src/android-chrome-512x512.png" alt="Project logo" title="Project logo" width="256">
 
   <h1 class="projectName">
-    <a href="https://internal-domain-name-calculator-for-truecharts-apps.johng.io/" title="Internal Domain Name Calculator for TrueCharts Apps">
-      Internal Domain Name Calculator for TrueCharts Apps
+    <a href="https://truecharts-domain-calc.johng.io/" title="TrueCharts Domain Calculator">
+      TrueCharts Domain Calculator
     </a>
   </h1>
 
@@ -15,8 +15,8 @@
     <a href="LICENSE">
       <img src="https://img.shields.io/github/license/twocaretcat/Internal-Domain-Name-Calculator-for-TrueCharts-Apps.svg" alt="Project license" title="Project license"/>
     </a>
-    <a href="https://internal-domain-name-calculator-for-truecharts-apps.johng.io/" title="Project URL">
-			<img src="https://img.shields.io/website?url=https%3A%2F%2Finternal-domain-name-calculator-for-truecharts-apps.johng.io&up_message=internal-domain-name-calculator-for-truecharts-apps.johng.io%20%E2%86%97" alt="Project URL" title="Project URL">
+    <a href="https://truecharts-domain-calc.johng.io/" title="Project URL">
+			<img src="https://img.shields.io/website?url=https%3A%2F%2Ftruecharts-domain-calc.johng.io&up_message=truecharts-domain-calc.johng.io%20%E2%86%97" alt="Project URL" title="Project URL">
 		</a>
   </p>
 
@@ -81,6 +81,7 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 This project includes various resources which carry their own copyright notices and license terms. See [LICENSE-THIRD-PARTY.md](LICENSE-THIRD-PARTY.md) for more details.
 
+This project is not affiliated with or endorsed by [TrueCharts](https://truecharts.org/) in any way.
 
 ## 💕 Funding
 Find this project useful? [Sponsoring me](https://johng.io/funding) will help me cover costs and **_commit_** more time to open-source.

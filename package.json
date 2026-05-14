@@ -1,5 +1,5 @@
 {
-	"name": "internal-domain-name-calculator-for-truecharts-apps",
+	"name": "truecharts-domain-calc",
 	"version": "1.0.0",
 	"description": "An online tool to find the internal domain name of a TrueCharts app",
 	"scripts": {
