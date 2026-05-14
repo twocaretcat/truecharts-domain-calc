@@ -1,49 +1,49 @@
 {
-  "name": "internal-domain-name-calculator-for-truecharts-apps",
-  "version": "1.0.0",
-  "description": "An online tool to find the internal domain name of a TrueCharts app",
-  "scripts": {
-    "dev": "gulp dev",
-    "build": "gulp build",
-    "lint": "biome lint",
-    "lint:write": "biome lint --write",
-    "format:write": "biome format --write",
-    "test": "gulp test",
-    "start": "gulp serve"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/twocaretcat/Internal-Domain-Name-Calculator-for-TrueCharts-Apps.git"
-  },
-  "keywords": [
-    "kubernetes",
-    "website",
-    "helm",
-    "webapp",
-    "helm-charts",
-    "domain-names",
-    "truenas-scale",
-    "truecharts"
-  ],
-  "author": "twocaretcat",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/twocaretcat/Internal-Domain-Name-Calculator-for-TrueCharts-Apps/issues"
-  },
-  "homepage": "https://github.com/twocaretcat/Internal-Domain-Name-Calculator-for-TrueCharts-Apps",
-  "devDependencies": {
-    "@biomejs/biome": "2.4.15",
-    "cypress": "^14.4.0",
-    "gulp": "^5.0.0",
-    "gulp-connect": "^5.7.0",
-    "gulp-copy": "^5.0.0",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^8.0.0",
-    "gulp-sass": "^6.0.1",
-    "gulp-typescript": "^6.0.0-alpha.1",
-    "gulp-uglify": "^3.0.2",
-    "sass": "^1.89.0",
-    "typescript": "^5.4.2"
-  },
-  "type": "module"
+	"name": "internal-domain-name-calculator-for-truecharts-apps",
+	"version": "1.0.0",
+	"description": "An online tool to find the internal domain name of a TrueCharts app",
+	"scripts": {
+		"dev": "gulp dev",
+		"build": "gulp build",
+		"lint": "biome lint",
+		"lint:write": "biome lint --write",
+		"format:write": "biome format --write",
+		"test": "gulp test",
+		"start": "gulp serve"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/twocaretcat/Internal-Domain-Name-Calculator-for-TrueCharts-Apps.git"
+	},
+	"keywords": [
+		"kubernetes",
+		"website",
+		"helm",
+		"webapp",
+		"helm-charts",
+		"domain-names",
+		"truenas-scale",
+		"truecharts"
+	],
+	"author": "twocaretcat",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/twocaretcat/Internal-Domain-Name-Calculator-for-TrueCharts-Apps/issues"
+	},
+	"homepage": "https://github.com/twocaretcat/Internal-Domain-Name-Calculator-for-TrueCharts-Apps",
+	"devDependencies": {
+		"@biomejs/biome": "2.4.15",
+		"cypress": "^14.4.0",
+		"gulp": "^5.0.0",
+		"gulp-connect": "^5.7.0",
+		"gulp-copy": "^5.0.0",
+		"gulp-htmlmin": "^5.0.1",
+		"gulp-imagemin": "^8.0.0",
+		"gulp-sass": "^6.0.1",
+		"gulp-typescript": "^6.0.0-alpha.1",
+		"gulp-uglify": "^3.0.2",
+		"sass": "^1.89.0",
+		"typescript": "^5.4.2"
+	},
+	"type": "module"
 }

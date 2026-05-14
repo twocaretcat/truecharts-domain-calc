@@ -1,11 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
 	const notificationTimeout: number = 3000;
-	const catalogAppNameInput: HTMLInputElement = getElementByIdOrThrow('catalogAppName') as HTMLInputElement;
-	const customAppNameInput: HTMLInputElement = getElementByIdOrThrow('customAppName') as HTMLInputElement;
-	const serviceNameInput: HTMLInputElement = getElementByIdOrThrow('serviceName') as HTMLInputElement;
-	const portNumberInput: HTMLInputElement = getElementByIdOrThrow('portNumber') as HTMLInputElement;
+	const catalogAppNameInput: HTMLInputElement = getElementByIdOrThrow(
+		'catalogAppName',
+	) as HTMLInputElement;
+	const customAppNameInput: HTMLInputElement = getElementByIdOrThrow(
+		'customAppName',
+	) as HTMLInputElement;
+	const serviceNameInput: HTMLInputElement = getElementByIdOrThrow(
+		'serviceName',
+	) as HTMLInputElement;
+	const portNumberInput: HTMLInputElement = getElementByIdOrThrow(
+		'portNumber',
+	) as HTMLInputElement;
 	const output: HTMLElement = getElementByIdOrThrow('output');
-
 
 	function getElementByIdOrThrow(id: string): HTMLElement {
 		const element = document.getElementById(id);
@@ -17,9 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		return element;
 	}
 
-
-	function buildDomainNamePrefix(catalogAppName: string, customAppName: string, serviceName: string | undefined): string {
-		const customNameContainsCatalogName: boolean = customAppName.includes(catalogAppName);
+	function buildDomainNamePrefix(
+		catalogAppName: string,
+		customAppName: string,
+		serviceName: string | undefined,
+	): string {
+		const customNameContainsCatalogName: boolean =
+			customAppName.includes(catalogAppName);
 
 		if (serviceName) {
 			if (customNameContainsCatalogName) {
@@ -36,17 +47,24 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
-
 	function generateDomainName(): void {
-		const catalogAppName: string = catalogAppNameInput.value.trim().toLowerCase();
-		const customAppName: string = customAppNameInput.value.trim().toLowerCase() || catalogAppName;
+		const catalogAppName: string = catalogAppNameInput.value
+			.trim()
+			.toLowerCase();
+		const customAppName: string =
+			customAppNameInput.value.trim().toLowerCase() || catalogAppName;
 		const serviceName: string = serviceNameInput.value.trim().toLowerCase();
 		const portNumber: string = portNumberInput.value.trim();
 		let domainName: string = '?';
 
 		if (catalogAppName) {
-			const prefix = buildDomainNamePrefix(catalogAppName, customAppName, serviceName);
-			const suffix = (portNumber === '' || portNumber === '80') ? '' : `:${portNumber}`;
+			const prefix = buildDomainNamePrefix(
+				catalogAppName,
+				customAppName,
+				serviceName,
+			);
+			const suffix =
+				portNumber === '' || portNumber === '80' ? '' : `:${portNumber}`;
 
 			domainName = `${prefix}.svc.cluster.local${suffix}`;
 		}
@@ -59,7 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
-
 	function copyToClipboard(text: string): void {
 		const el: HTMLTextAreaElement = document.createElement('textarea');
 
@@ -70,7 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.execCommand('copy');
 		document.body.removeChild(el);
 	}
-
 
 	function notifyUser(message: string): void {
 		const notification: HTMLDivElement = document.createElement('div');
@@ -85,7 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			document.body.removeChild(notification);
 		}, notificationTimeout);
 	}
-
 
 	catalogAppNameInput.addEventListener('input', generateDomainName);
 	customAppNameInput.addEventListener('input', generateDomainName);

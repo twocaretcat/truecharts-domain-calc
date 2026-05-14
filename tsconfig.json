@@ -2,7 +2,7 @@
 	"ts-node": {
 		"transpileOnly": true,
 		"compilerOptions": {
-			"module": "ES2015", // Compile to ES modules instead of CommonJS
+			"module": "ES2015" // Compile to ES modules instead of CommonJS
 		}
 	}
 }
