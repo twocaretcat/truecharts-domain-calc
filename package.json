@@ -13,7 +13,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/twocaretcat/Internal-Domain-Name-Calculator-for-TrueCharts-Apps.git"
+		"url": "git+https://github.com/twocaretcat/truecharts-domain-calc.git"
 	},
 	"keywords": [
 		"kubernetes",
@@ -28,9 +28,9 @@
 	"author": "twocaretcat",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/twocaretcat/Internal-Domain-Name-Calculator-for-TrueCharts-Apps/issues"
+		"url": "https://github.com/twocaretcat/truecharts-domain-calc/issues"
 	},
-	"homepage": "https://github.com/twocaretcat/Internal-Domain-Name-Calculator-for-TrueCharts-Apps",
+	"homepage": "https://github.com/twocaretcat/truecharts-domain-calc",
 	"devDependencies": {
 		"@biomejs/biome": "2.4.15",
 		"cypress": "^14.4.0",

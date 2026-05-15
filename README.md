@@ -10,10 +10,10 @@
 
   <p class="projectBadges">
     <img src="https://johng.io/badges/category/App.svg" alt="Project category" title="Project category">
-    <img src="https://img.shields.io/github/languages/top/twocaretcat/Internal-Domain-Name-Calculator-for-TrueCharts-Apps.svg" alt="Language" title="Language">
-    <img src="https://img.shields.io/github/repo-size/twocaretcat/Internal-Domain-Name-Calculator-for-TrueCharts-Apps.svg" alt="Repository size" title="Repository size">
+    <img src="https://img.shields.io/github/languages/top/twocaretcat/truecharts-domain-calc.svg" alt="Language" title="Language">
+    <img src="https://img.shields.io/github/repo-size/twocaretcat/truecharts-domain-calc.svg" alt="Repository size" title="Repository size">
     <a href="LICENSE">
-      <img src="https://img.shields.io/github/license/twocaretcat/Internal-Domain-Name-Calculator-for-TrueCharts-Apps.svg" alt="Project license" title="Project license"/>
+      <img src="https://img.shields.io/github/license/twocaretcat/truecharts-domain-calc.svg" alt="Project license" title="Project license"/>
     </a>
     <a href="https://truecharts-domain-calc.johng.io/" title="Project URL">
 			<img src="https://img.shields.io/website?url=https%3A%2F%2Ftruecharts-domain-calc.johng.io&up_message=truecharts-domain-calc.johng.io%20%E2%86%97" alt="Project URL" title="Project URL">
@@ -42,9 +42,9 @@ Based on information from the [TrueCharts documentation](https://truecharts.org/
    - Node.js and NPM. (see [nodejs.org](https://nodejs.org/) for more details)
    - `gulp-cli` with `npm install --global gulp-cli`
 2. Download the source code:
-   - Clone the repo with `https://github.com/twocaretcat/Internal-Domain-Name-Calculator-for-TrueCharts-Apps.git`, or
+   - Clone the repo with `https://github.com/twocaretcat/truecharts-domain-calc.git`, or
    - Download the repository as a zip file and extract it
-3. Enter the project root with `cd Internal-Domain-Name-Calculator-for-TrueCharts-Apps`.
+3. Enter the project root with `cd truecharts-domain-calc`.
 4. Use `npm install` to install the app and all of its dependencies.
 5. Use `npm run build` to build the project and copy assets to the `dist/` directory.
 6. Serve the project using `npm start` or use the static HTTP server of your choice. By default, the site can be accessed at [localhost:8000](https://localhost:8000).
